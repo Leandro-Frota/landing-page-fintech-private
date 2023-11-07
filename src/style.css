@@ -64,7 +64,8 @@ section{
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    
+
+
  
 }
 
@@ -176,7 +177,16 @@ section{
   
 }
 
+.card-resume-yesterday{
+    height: auto;
+    background-color: white;
+    color: #D9D7D9;
 
+}
+
+.resume-yesterday i{
+    color: #D9D7D9;
+}
 .card-right{
     flex-grow: 1;
 }
