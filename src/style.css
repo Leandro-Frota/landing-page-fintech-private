@@ -1,6 +1,4 @@
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 
 
@@ -10,7 +8,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -21,45 +19,164 @@ body{
 }
 
 
-header{
-    flex-grow: 1;
+header {
+    height: 20%;
 }
 
-main{
-    flex-grow: 2;
+main {
+    height: 45%;
 }
 
-section{
-    flex-grow: 2;
-    flex-basis: 35%;
+section {
+    height: auto;   
+
+
+}
+
+.cards {
+
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.card-left, .card-right{
+    padding: 2rem 0;
+}
+.card-left-square, .card-right-square {
+    border: 2px solid #BAC7EE;
+    border-radius: 15px;
+    background-color: #F8F9FE;
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1rem;
+
+}
+
+.logo-brand-card-left-square, .logo-brand-card-right-square {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-brand-card-left-square .logo-brand, .logo-brand-card-right-square .logo-brand {
+    border: 1px solid #7889C9;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    padding: 0.2rem 0.4rem;
+
+}
+
+.logo-brand-card-right-square .logo-brand {
+    border: 1px solid #7889C9;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    padding: 0.8rem 1rem;
+
+}
+
+.logo-brand-card-right-square .logo-brand img{
+    width: 40px;
+
+}
+
+.logo-brand-card-left-square .brand, .logo-brand-card-right-square .brand  {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    color: #1A1B20;
+    font-weight: bold;
+
+}
+
+
+
+.value-total-card-left-square span, .value-total-card-right-square span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.value-compound-card-left-square, .value-compound-card-right-square  {
+    display: flex;
+    align-items: center;
+
     
 }
 
-.cards{
-    width: 100%;
+.value-compound-card-right-square  {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
+    
+}
+.value-rbs{
+    margin-right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.value-rbs-total{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.value-rbs-mult, .value-rbs-apy{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #7889C9;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 0 10px 0 0 ;
+    font-size: 14px;
+}
+
+.value-rbs-mult  img{
+    border: 1px solid #BAC7EE;
+    border-radius: 50%;
+    padding: 2px;
+    width: 25px;
 
 }
-.card-left{
-    flex-grow: 1;
+
+.value-rbs-apy  img{
+    border: 1px solid #BAC7EE;
+    border-radius: 50%;
+    
+    width: 25px;
+
 }
-.card-center{
-    flex-grow: 1;
+
+.value-rbs-mult  span,.value-rbs-apy span {
+    font-size: 12px;
+}
+
+.card-center {
+    width: 33, 33%;
     display: flex;
     justify-content: center;
     padding: 0 1rem;
-    border: 1px solid blue;
+ 
 }
 
-.card-center-smartphone{
+.card-center-smartphone {
     border: 10px solid black;
     border-radius: 60px 60px 0 0;
     border-bottom: none;
     min-width: 60%;
     height: 100%;
-    background: linear-gradient(to right,#3753C0,#5976E5);
+    background: linear-gradient(to right, #3753C0, #5976E5);
     padding: 0.5rem 0 0 0;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -68,10 +185,10 @@ section{
     flex-direction: column;
 
 
- 
+
 }
 
-.card-watch-5g-wifi-battery{
+.card-watch-5g-wifi-battery {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,48 +196,50 @@ section{
 
 
 }
-.icons-5g-wifi-battery ul{
+
+.icons-5g-wifi-battery ul {
     display: flex;
     gap: 0.5rem;
     margin-right: 1rem;
 
 
 }
-.icons-5g-wifi-battery ul li{
+
+.icons-5g-wifi-battery ul li {
     list-style-type: none;
     color: white;
 }
 
-.watch{
+.watch {
     color: white;
     margin-left: 2rem;
 }
 
-.camera{
+.camera {
     width: 6rem;
     height: 2rem;
     border-radius: 15px;
     background-color: #040305;
 }
 
-.card-next-sweep{
+.card-next-sweep {
     text-align: center;
     margin-top: 0.5rem;
 
 }
 
-.card-next-sweep h4{
+.card-next-sweep h4 {
     background-color: #5A74D6;
     color: white;
     display: inline;
     padding: 0.2rem;
-    border-radius: 10px ;
+    border-radius: 10px;
     font-weight: 300;
     font-size: 10px;
 }
 
-.card-prices{
-   
+.card-prices {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,63 +248,66 @@ section{
 
 }
 
-.valour-total-fund{
+.valour-total-fund {
     display: flex;
     align-items: center;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 
- 
+
 }
-.valour-total-fund img{
+
+.valour-total-fund img {
     width: 25px;
     border: 2px;
     margin-right: 1rem;
-     
+
 }
 
-.valour-compound-fund{
+.valour-compound-fund {
     font-size: 10px;
     margin-bottom: 0.5rem;
-    
-   
+
+
 }
-.valour-compound-fund span{
+
+.valour-compound-fund span {
     margin-right: 1rem;
 }
 
-.card-links-features{
+.card-links-features {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem ;
+    gap: 3rem;
     flex-direction: row;
     padding: 1rem 2rem;
 
 }
 
-.card-links-features-option{
+.card-links-features-option {
     display: flex;
     flex-direction: column;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
 }
-.card-links-features-option img{
+
+.card-links-features-option img {
     background-color: #677DD7;
     z-index: 10;
     border-radius: 50%;
-   padding: 0.5rem;
+    padding: 0.5rem;
 }
 
-.card-links-features-option span{
+.card-links-features-option span {
     font-size: 8px;
-  
+
 }
 
-.card-resume-yesterday{
+.card-resume-yesterday {
     height: 100%;
     background-color: white;
-    border-radius: 5px 5px ;
+    border-radius: 5px 5px;
     color: #D9D7D9;
     display: flex;
     justify-content: space-between;
@@ -194,21 +316,42 @@ section{
 
 }
 
-.resume-yesterday{
-    color: #D9D7D9;
+.resume-yesterday {
+    color: #969496;
     font-size: 15px;
     display: flex;
     justify-content: space-between;
     padding: 0 0.5rem;
 }
 
-.logo-resume-yesterday-valour{
+.resume-yesterday i {
+    color: #969496;
+}
+
+.logo-resume-yesterday-valour {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding:0rem 0.5rem ;
+    padding: 0rem 0.5rem;
 }
-.card-right{
-    flex-grow: 1;
+
+.logo-joint span {
+    color: #969496;
+}
+
+.logo-joint span {
+    color: #3E1054;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.logo-resume-yesterday-valour .valour {
+
+    color: #3E1054;
+    font-weight: bold;
+}
+
+.card-right {
+
 }
