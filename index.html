@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Fintech</title>
+    <title>Layout Desktop</title>
     <link rel="stylesheet" href="src/style.css">
-
+    <link rel="stylesheet" href="./src/style-cards.css">
+    <link rel="stylesheet" href="src/reset.css">
 
 </head>
-
 <body>
-    <header>HEADER</header>
-    <main>MAIN</main>
+    <header class="cabecalho">
+        <div class="cabecalho_img">
+            <img src="" alt="">    
+        </div>
+        <nav class="cabecalho_nav">
+            <ul class="cabecalho_nav_link">
+                <li><a href="#link1">Link 1</a></li>
+                <li><a href="#link2">Link 2</a></li>
+                <li><a href="#link3">Link 3</a></li>
+                <li><a href="#link3">Link 4</a></li>
+            </ul>
+        </nav>
+        <div class="cabecalho_botao">
+            <button class="cabecalho_botao"></button>
+        </div>
+    </header>
+    <main>
+        <div class="texto">
+            <p>texto do site.</p>
+        </div>
+        <div class="formulario">
+            <label for="email"></label>
+            <input type="email" id="email" name="email">
+            <button type="submit">Join</button>
+        </div>
+    </main>
     <section class="cards">
-        <div class="card-left">CARD-LEFT</div>
+        <div class="card-left">
+            <div class="card-left-square">
+                <div class="logo-brand-card-left-square">
+                    <div class="logo-brand"><img src="assets/icons8-hsbc-48.png" alt="logo banco"></div>
+                    <div class="brand">
+                        <span>HSBC</span>
+                        <p>Active account</p>
+                    </div>
+                </div>
+                <div class="value-total-card-left-square">
+                    <span> £2,281.15</span>
+                </div>
+                <div class="value-compound-card-left-square">
+                    <div class="value-rbs">
+                        <span class="value-rbs-total">£2,281.15 to</span>
+                        <span class="value-rbs-mult">
+                            <img src="assets/logo-RBS.png" alt="">
+                            <span>*3930</span>
+                        </span>
+                    </div>
+
+                    <img class="icone-open-close" src="assets/icone-close-open.png" alt="">
+
+
+                </div>
+            </div>
+            <div class="text-card-left">
+                <p>Day-to-Day account earning minimal interest</p>
+            </div>
+        </div>
+
         <div class="card-center">
             <div class="card-center-smartphone">
                 <div class="card-watch-5g-wifi-battery">
@@ -33,38 +86,40 @@
                     <div class="card-next-sweep">
                         <h4>Next sweep in: 11h 20m</h4>
                     </div>
-                    <h2 class="valour-total-fund"><img src="assets/icons8-hsbc-48.png" alt="logo banco hsbc">£ 12,821.15</h2>
-                    <p class="valour-compound-fund"><span>Personal funds</span>£10,000.00</p>
-                    <p class="valour-compound-fund"><span>Credit funds</span>£2,281.15</p>
+                    <h2 class="value-total-fund"><img src="assets/icons8-hsbc-48.png" alt="logo banco hsbc">£ 12,821.15
+                    </h2>
+                    <p class="value-compound-fund"><span>Personal funds</span>£10,000.00</p>
+                    <p class="value-compound-fund"><span>Credit funds</span>£2,281.15</p>
                 </div>
                 <div class="card-links-features">
                     <div class="card-links-features-option">
-                       <img src="assets/logo-tax.png" alt="logo tax">
+                        <img src="assets/logo-tax.png" alt="logo tax">
                         <span>Tax</span>
                         <span>Savings</span>
                     </div>
                     <div class="card-links-features-option">
                         <img src="assets/logo-overdraft.png" alt="logo tax">
-                         <span>Overdraft</span>
-                         <span>Protection</span>
-                     </div>
-                     <div class="card-links-features-option">
+                        <span>Overdraft</span>
+                        <span>Protection</span>
+                    </div>
+                    <div class="card-links-features-option">
                         <img src="assets/logo-settings.png" alt="logo tax">
-                         <span>Account</span>
-                         <span>Settings</span>
-                     </div>
+                        <span>Account</span>
+                        <span>Settings</span>
+                    </div>
                 </div>
                 <div class="card-resume-yesterday">
                     <div class="resume-yesterday">
-                        <i class="fa-sharp fa-light fa-chart-simple"></i>
+                        <i class="fa-solid fa-chart-simple"></i>
                         <span>yesterday</span>
-                        <i class="fa-light fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <div class="card-resume-yesterday-valour">
                         <div class="logo-resume-yesterday-valour">
                             <div class="logo-joint">
-                                <img src="assets/logo-RBS.png" alt="">
-                                <span>To RBS (saving)</span>
+                                <p> <img src="assets/logo-RBS.png" alt="">
+                                    <span>To RBS</span>(saving)
+                                </p>
                             </div>
                             <span class="valour">-£1,204</span>
                         </div>
@@ -72,10 +127,35 @@
                 </div>
             </div>
         </div>
-        <div class="card-right">CARD-RIGTH</div>
-    </section>
+        <div class="card-right">
+            <div class="card-right-square">
+                <div class="logo-brand-card-right-square">
+                    <div class="logo-brand"><img src="assets/logo-RBS-right.png" alt="logo banco"></div>
+                    <div class="brand">
+                        <span>Royal Bank of Scotland</span>
+                        <p>Saving account</p>
+                    </div>
+                </div>
+                <div class="value-total-card-right-square">
+                    <span> £589,185</span>
+                </div>
+                <div class="value-compound-card-right-square">
+                    <div class="value-rbs">
+                        <span class="value-rbs-mult">
+                            <img src="assets/icon-percent.png" alt="">
+                            <span>3.2 APY</span>
+                        </span>
+                    </div>
 
+                    <img class="icone-open-close" src="assets/icone-close-open.png" alt="">
+                </div>
+            </div>
+            <div class="text-card-right">
+                <p>Savings account earning interest</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/ae8373c58f.js" crossorigin="anonymous"></script>
 </body>
-<script src="https://kit.fontawesome.com/ae8373c58f.js" crossorigin="anonymous"></script>
 
 </html>
