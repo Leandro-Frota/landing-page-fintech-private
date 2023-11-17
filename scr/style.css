@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column ;
+    gap: 3rem;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 2rem 2rem 1rem;
 
 }
 
@@ -18,13 +27,13 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    list-style: none;
    
     
 }
 
 .header-nav-link a{
   text-decoration: none ;
-  list-style: none;
   border: 1px solid #2D4FD6;
   color: #2D4FD6;
   border-radius: 20px;
@@ -36,7 +45,7 @@ body {
   
 }
 
-.header .button{
+.header .button , .text-form button{
     background-color: #2D4FD6;
     border: none;
     border-radius: 8px;
@@ -47,31 +56,72 @@ body {
 }
 main {
 
-    height: 40%;
+
     text-align: center;
+    flex: 2;
 
 }
-.text-contaner{
-    
-}
-.texto{
-    display: flex;
-    justify-content: center;
-}
-.formulario{
-    display: flex;
-    justify-content: center;
-}
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    height: 10%;
-    
-}
-.cabecalho_nav_link{
-    display: flex;
-    justify-content: space-between;
+.text-center{
+
+    width: 50%;
+    margin: auto;
+    text-align: center;
 }
 
+.text-center h1{
+    font-size: 40px;
+    color: #17181C;
+    padding: 1rem 6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:  700;
+    line-height: 0rem 3rem;
+}
+
+.text-center h1 span{
+    color: #2D4FD6;
+}
+
+.text-center p{
+    font-family: 'Open Sans', sans-serif;
+    color: #17181C;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0rem 2rem;
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.text-form{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    border: 1px solid #ebe4f0;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    padding: 0.3rem;
+
+}
+
+.text-form label{
+    display: none;
+}
+
+
+
+.text-form input{
+    border: none;
+
+}
+
+.text-form input::placeholder{
+    color: #dbd8dd;
+    font-size: 15px;
+}
+
+.cards{
+    flex: 2;
+}
 
